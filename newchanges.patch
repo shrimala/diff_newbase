@@ -1,45 +1,3 @@
-diff --git a/config/install/diff.plugins.yml b/config/install/diff.plugins.yml
-old mode 100644
-new mode 100755
-diff --git a/config/install/diff.settings.yml b/config/install/diff.settings.yml
-old mode 100644
-new mode 100755
-diff --git a/config/optional/core.entity_view_mode.node.diff.yml b/config/optional/core.entity_view_mode.node.diff.yml
-old mode 100644
-new mode 100755
-diff --git a/config/schema/diff.schema.yml b/config/schema/diff.schema.yml
-old mode 100644
-new mode 100755
-diff --git a/css/diff.default.css b/css/diff.default.css
-old mode 100644
-new mode 100755
-diff --git a/css/diff.general.css b/css/diff.general.css
-old mode 100644
-new mode 100755
-diff --git a/css/diff.github.css b/css/diff.github.css
-old mode 100644
-new mode 100755
-diff --git a/diff.api.php b/diff.api.php
-old mode 100644
-new mode 100755
-diff --git a/diff.info.yml b/diff.info.yml
-old mode 100644
-new mode 100755
-diff --git a/diff.libraries.yml b/diff.libraries.yml
-old mode 100644
-new mode 100755
-diff --git a/diff.links.menu.yml b/diff.links.menu.yml
-old mode 100644
-new mode 100755
-diff --git a/diff.links.task.yml b/diff.links.task.yml
-old mode 100644
-new mode 100755
-diff --git a/diff.module b/diff.module
-old mode 100644
-new mode 100755
-diff --git a/diff.routing.yml b/diff.routing.yml
-old mode 100644
-new mode 100755
 diff --git a/diff.services.yml b/diff.services.yml
 index 55bd570..17aa8ce 100755
 --- a/diff.services.yml
@@ -52,15 +10,6 @@ index 55bd570..17aa8ce 100755
 +  diff.entity_comparison:
 +    class: Drupal\diff\DiffEntityComparison
 +    arguments: ['@config.factory', '@diff.diff.formatter', '@date.formatter','@plugin.manager.field.field_type', '@diff.entity_parser']
-diff --git a/js/diff.js b/js/diff.js
-old mode 100644
-new mode 100755
-diff --git a/src/Annotation/FieldDiffBuilder.php b/src/Annotation/FieldDiffBuilder.php
-old mode 100644
-new mode 100755
-diff --git a/src/Controller/GenericRevisionController.php b/src/Controller/GenericRevisionController.php
-old mode 100644
-new mode 100755
 diff --git a/src/Controller/NodeRevisionController.php b/src/Controller/NodeRevisionController.php
 old mode 100644
 new mode 100755
@@ -151,12 +100,6 @@ index da4e7ad..275b503
      }
  
      // If there are only 2 revision return an empty row.
-diff --git a/src/DiffBreadcrumbBuilder.php b/src/DiffBreadcrumbBuilder.php
-old mode 100644
-new mode 100755
-diff --git a/src/DiffBuilderManager.php b/src/DiffBuilderManager.php
-old mode 100644
-new mode 100755
 diff --git a/src/DiffEntityComparison.php b/src/DiffEntityComparison.php
 new file mode 100644
 index 0000000..cd1b337
@@ -484,12 +427,6 @@ index 0000000..cd1b337
 +  }
 +
 +}
-diff --git a/src/DiffEntityParser.php b/src/DiffEntityParser.php
-old mode 100644
-new mode 100755
-diff --git a/src/DiffFormatter.php b/src/DiffFormatter.php
-old mode 100644
-new mode 100755
 diff --git a/src/EntityComparisonBase.php b/src/EntityComparisonBase.php
 old mode 100644
 new mode 100755
@@ -817,75 +754,3 @@ index 850b810..c136dff
 -  }
 -
  }
-diff --git a/src/FieldDiffBuilderBase.php b/src/FieldDiffBuilderBase.php
-old mode 100644
-new mode 100755
-diff --git a/src/FieldDiffBuilderInterface.php b/src/FieldDiffBuilderInterface.php
-old mode 100644
-new mode 100755
-diff --git a/src/Form/FieldTypesSettingsForm.php b/src/Form/FieldTypesSettingsForm.php
-old mode 100644
-new mode 100755
-diff --git a/src/Form/GeneralSettingsForm.php b/src/Form/GeneralSettingsForm.php
-old mode 100644
-new mode 100755
-diff --git a/src/Form/NodeEntitySettingsForm.php b/src/Form/NodeEntitySettingsForm.php
-old mode 100644
-new mode 100755
-diff --git a/src/Plugin/Diff/CommentFieldBuilder.php b/src/Plugin/Diff/CommentFieldBuilder.php
-old mode 100644
-new mode 100755
-diff --git a/src/Plugin/Diff/CoreFieldBuilder.php b/src/Plugin/Diff/CoreFieldBuilder.php
-old mode 100644
-new mode 100755
-diff --git a/src/Plugin/Diff/EntityReferenceFieldBuilder.php b/src/Plugin/Diff/EntityReferenceFieldBuilder.php
-old mode 100644
-new mode 100755
-diff --git a/src/Plugin/Diff/FileFieldBuilder.php b/src/Plugin/Diff/FileFieldBuilder.php
-old mode 100644
-new mode 100755
-diff --git a/src/Plugin/Diff/ImageFieldBuilder.php b/src/Plugin/Diff/ImageFieldBuilder.php
-old mode 100644
-new mode 100755
-diff --git a/src/Plugin/Diff/LinkFieldBuilder.php b/src/Plugin/Diff/LinkFieldBuilder.php
-old mode 100644
-new mode 100755
-diff --git a/src/Plugin/Diff/ListFieldBuilder.php b/src/Plugin/Diff/ListFieldBuilder.php
-old mode 100644
-new mode 100755
-diff --git a/src/Plugin/Diff/TextFieldBuilder.php b/src/Plugin/Diff/TextFieldBuilder.php
-old mode 100644
-new mode 100755
-diff --git a/src/Plugin/Diff/TextWithSummaryFieldBuilder.php b/src/Plugin/Diff/TextWithSummaryFieldBuilder.php
-old mode 100644
-new mode 100755
-diff --git a/src/Routing/DiffRouteProvider.php b/src/Routing/DiffRouteProvider.php
-old mode 100644
-new mode 100755
-diff --git a/src/Tests/AdminFormsTest.php b/src/Tests/AdminFormsTest.php
-old mode 100644
-new mode 100755
-diff --git a/src/Tests/DiffLocaleTest.php b/src/Tests/DiffLocaleTest.php
-old mode 100644
-new mode 100755
-diff --git a/src/Tests/DiffPluginTest.php b/src/Tests/DiffPluginTest.php
-old mode 100644
-new mode 100755
-diff --git a/src/Tests/DiffRevisionTest.php b/src/Tests/DiffRevisionTest.php
-old mode 100644
-new mode 100755
-diff --git a/src/Tests/ViewModeTest.php b/src/Tests/ViewModeTest.php
-old mode 100644
-new mode 100755
-diff --git a/tests/modules/diff_test/config/install/filter.format.basic_html.yml b/tests/modules/diff_test/config/install/filter.format.basic_html.yml
-old mode 100644
-new mode 100755
-diff --git a/tests/modules/diff_test/diff_test.info.yml b/tests/modules/diff_test/diff_test.info.yml
-old mode 100644
-new mode 100755
-diff --git a/tests/modules/diff_test/diff_test.module b/tests/modules/diff_test/diff_test.module
-old mode 100644
-new mode 100755
-diff --git a/tests/src/Kernel/DiffControllerTest.php b/tests/src/Kernel/DiffControllerTest.php
-old mode 100644
-new mode 100755
